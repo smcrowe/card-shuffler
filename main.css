@@ -1,0 +1,257 @@
+/* =========== */
+/* Base Styles */
+/* =========== */
+
+body{
+	font-family:helvetica,sans-serif;
+	color:white;
+	background: black;
+}
+section {
+	width:100%;
+	display:block;
+	clear:all;
+	overflow:hidden;
+}
+h1 {
+	margin-right:0.80%;
+	display:inline-block;
+}
+h3 {
+	font-weight:normal;
+	display:inline-block;
+	margin:0;
+}
+h2 {
+	font-weight:normal;
+	font-size:1em;
+}
+.logo {
+	height:60px;
+	display:block;
+	position:fixed;
+	top:0;
+	left:0;
+    float: left;
+}
+.actions {
+	position:fixed;
+    right: 20px;
+    top:25px;
+	/*width:20%;*/
+}
+
+/* ================= */
+/* Main Content Area */
+/* ================= */
+
+#shuffleZone {
+	/* padding-bottom: 15%; */
+    margin-top:60px;
+    margin-right: 10px;
+	overflow: visible;
+}
+.cards9{
+    width:900vh;
+}
+.cards8{
+    width:800vh;
+}
+.cards7 {
+	width:700vh;
+}
+.cards6 {
+	width:600vh;
+}
+.cards5 {
+    width: 500vh;
+}
+.cards4{
+    width: 400vh;
+}
+.cards3{
+    width: 300vh;
+}
+.cards2{
+    width: 200vh;
+}
+img.cardImg{
+	height: 100%;
+	cursor: hand;
+}
+.card {
+	float:left;
+	margin:0 20px 0 0;
+    height: 86vh;
+}
+/* .cards8 .card{
+    height:80vh;
+}
+.cards7 .card {
+	width:12.8%;
+}
+.cards6 .card {
+	width:14.5%;
+}
+.cards5 .card {
+	width:16.8%;
+}
+.cards4 .card, .cards3 .card, .cards2 .card, .cards1 .card {
+	width:22%;
+}
+
+.cards0 .card {
+	width:0%;
+}*/
+
+.card.on {
+	visibility: visible;
+	display:block;
+}
+.card.off {
+	visibility:hidden;
+	display:none;
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.visible {
+    visibility: visible;
+    display: block;
+}
+
+/* ========================= */	
+/* Controller Section Styles */
+/* ========================= */
+
+#Filters {
+	position: fixed;
+	left:0;
+	top:0;
+	border-top: 1px solid white;
+	padding: 20px;
+	background:black;
+    overflow: scroll;
+}
+.cardControler {
+	float:left;
+	/* width:10%; */
+	margin:0 1% 0 0;
+}
+.controlerImg img {
+	width:60%;
+	display:block;
+	margin-bottom:10px;
+}
+.title {
+	display:block;
+	position:relative;
+	margin:10px 0;
+	height:4%;
+}
+input[type="checkbox"] {
+	display:inline-block;
+}
+label {
+	cursor: hand;
+}
+
+.button {
+	cursor:hand;
+	height:25px;
+	padding: 8px 8px 5px 8px;
+	background:black;
+	border:1px solid white;
+	text-align:center;
+	display:block;
+	margin: 7% 3%;
+}
+	.button:hover {
+		background:white;
+		color:black;
+	}
+#preLoadImg{
+	display:none;
+	visibility:hidden;
+}
+
+/* ================== */
+/* Media Query Tweaks */
+/* ================== */
+
+@media (max-width:320px){
+	/* .cards7 .card, .cards6 .card, .cards5 .card, .cards4 .card, .cards3 .card, .cards2 .card, .cards1 .card {
+		width:48%;
+	}
+	#shuffleZone {
+		padding-bottom: 45%;
+		width:100%;
+	} 
+	.cards7 { width:410%; }
+	.cards6 { width:360%; }
+	.cards5 { width:320%; }
+	.cards4, .cards3, .cards2, .cards1 { width:240%; }
+	
+	.cardControler span {
+		display:none;
+	}
+	#actions {
+		width:20%;
+	}
+	.button { font-size: .8em; }*/
+}
+
+/* @media (min-width:330px) {
+	.cards6 .card, .cards5 .card, .cards4 .card, .cards3 .card, .cards2 .card, .cards1 .card {
+		width:30%;
+	}
+}*/
+
+@media (max-width:650px){
+	/* .cardControler span {
+		display:none;
+	}
+	.title {
+		height:15%;
+	}	*/
+}
+
+@media (min-width:770px) {
+    /*.cards6 .card, .cards5 .card {
+		width: 27%;
+	} 
+	.cardControler img {
+		width:40%;
+	}*/
+}
+
+@media (min-width:1200px) {
+	/*.cardControler img {
+		width:50%;
+	}
+	.cards6 .card {
+		width:15.5%
+	}
+	.cards5 .card {
+		width:19%
+	}
+	.cards4 .card {
+		width:23.5%;
+	}
+	.cards3 .card, .cards2 .card, .cards1 .card {
+		width:25%;
+	}
+	.cards0 .card {
+		width:0%;
+	}
+	
+}
+
+@media (min-width:2100px) {
+	.cardControler img {
+		width:50%;
+	}
+} */

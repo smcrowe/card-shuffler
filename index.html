@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Empathy toolkit shuffler</title>
+<meta name="viewport" content="width=device-width,initial-scale = 1.0,maximum-scale = 1.0" />
+<link rel="stylesheet" href="main.css" />
+<script type="text/javascript" src="lib.js"></script>
+</head>
+
+<body>
+<!-- Logo -->
+<section>
+	<img class="logo" src="JPEG/tda_insti_r.png">
+	<div class="actions">
+        <!--
+		<div class="button" onclick="randomAll()">Shuffle!</div>
+		<div class="button" onclick="resetAll()">Reset</div>
+        -->
+        <button style="margin-right:20px;" onclick="showFilters()">Show filters</button>
+        <button onclick="resetAll()">Reset</button>
+        <button onclick="randomAll()" >Shuffle</button>
+	</div>	
+</section>
+
+<!-- Main content area -->
+<section id="shuffleZone" class="cards8">
+	<div id="LifeStage" class="card on">
+		<img class="cardImg" id="LifeStageImg" src="JPEG/01_titleCard.jpg" onclick="randomLifeStage()"/>
+        <br/>
+	</div>
+	<div id="Mentality"  class="card on">
+		<img class="cardImg" id="MImg" src="JPEG/02_titleCard.jpg" onclick="randomMentality()"/>
+	</div>
+	<div id="Portfolio" class="card on">
+		<img class="cardImg" id="PortfolioImg" src="JPEG/03_titleCard.jpg" onclick="randomPortfolio()"/>
+	</div>	
+	<div id="Career"  class="card on">
+		<img class="cardImg" id="CareerImg" src="JPEG/07_titleCard.jpg" onclick="randomCareer()"/>
+	</div>
+	<div id="DigitalTool"  class="card on">
+		<img class="cardImg" id="DTImg" src="JPEG/04_titleCard.jpg" onclick="randomDigitalTool()"/>
+	</div>
+	<div id="Emotion"  class="card on">
+		<img class="cardImg" id="EmotionImg" src="JPEG/06_titleCard.jpg" onclick="randomEmotion()"/>
+	</div>
+    <div id="AccessAtWork"  class="card on">
+		<img class="cardImg" id="AccessAtWorkImg" src="JPEG/08_titleCard.jpg" onclick="randomAccessAtWork()"/>
+	</div>
+    <div id="PlatformAdoption"  class="card on">
+		<img class="cardImg" id="PlatformAdoptionImg" src="JPEG/05_titleCard.jpg" onclick="randomPlatformAdoption()"/>
+	</div>
+	<div id="Scenario"  class="card on">
+		<img class="cardImg" id="ScenarioImg" src="JPEG/09_titleCard.jpg" onclick="randomScenario()"/>
+	</div>
+</section>
+
+<!-- Filters -->
+<section id="Filters" class="controlers hidden">
+    <div class="actions" onclick="hideFilters()" ><button>Done</button></div>
+	<label class="cardControler" >
+		<input type="checkbox" id="LifeStageToggle" checked="checked" onclick="toggleDeck(this.id)" />
+		<span>Generation</span> 
+	</label>
+	<label class="cardControler">
+		<input type="checkbox" id="MentalityToggle" checked="checked" onclick="toggleDeck(this.id)" />
+		<span>Investor Mentality</span>
+	</label>    
+	<label class="cardControler">
+		<input type="checkbox" id="PortfolioToggle" checked="checked" onclick="toggleDeck(this.id)"/>
+		<span>Portfolio Strategy</span> 
+	</label>	
+	<label class="cardControler">	
+		<input type="checkbox" id="CareerToggle" checked="checked" onclick="toggleDeck(this.id)">
+		<span>Wealth accumulation</span>
+	</label>
+	<label class="cardControler">
+		<input type="checkbox" id="DigitalToolToggle" checked="checked" onclick="toggleDeck(this.id)"/>
+		<span>Login frequency</span>
+	</label>
+	<label class="cardControler">
+		<input type="checkbox" id="EmotionToggle" checked="checked" onclick="toggleDeck(this.id)"/>
+		<span>Advisor relationship</span>	
+	</label>
+	<label class="cardControler">
+		<input type="checkbox" id="AccessAtWorkToggle" checked="checked" onclick="toggleDeck(this.id)"/>
+		<span>Access at work</span>
+	</label> 
+    <label class="cardControler">
+		<input type="checkbox" id="PlatformAdoptionToggle" checked="checked" onclick="toggleDeck(this.id)"/>
+		<span>Platform adoption</span>
+	</label> 
+	<label class="cardControler">
+		<input type="checkbox" id="ScenarioToggle" checked="checked" onclick="toggleDeck(this.id)"/>
+		<span>Scenarios</span>
+	</label>
+</section>
+
+<!-- image preload placeholder element -->
+<!--<img id="preLoadImg" src="JPEG/pCard_0.jpg" />-->
+
+</body>
+</html>
